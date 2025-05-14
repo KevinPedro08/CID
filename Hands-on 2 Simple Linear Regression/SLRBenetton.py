@@ -17,7 +17,9 @@ B1 = (n * sumXY - sumX * sumY) / (n * sumX2 - sumX**2)
 B0 = (sumY - B1 * sumX) / n
 
 # Mostramos la ecuacion de regresion
-print(f"\nEcuacion de Regresion: Sales = {B0:.2f} + {B1:.2f} * Advertising")
+print("Simple Linear Regression Benetton")
+print("\n                                B0        B1")
+print(f"Ecuacion de Regresion: Sales = {B0:.2f} + {B1:.2f} * Advertising")
 
 # Damos valores desconocidos para realizar predicciones
 advertising_pred = [21, 28, 55, 60, 68]
@@ -27,3 +29,5 @@ print("\nPredicciones de Sales con valores desconocidos:")
 for x in advertising_pred:
     x_pred = B0 + B1 * x
     print(f"Advertising = {x}: Sales ≈ {x_pred:.2f}")
+
+print("\n")
